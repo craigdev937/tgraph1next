@@ -20,9 +20,15 @@
   },
   "homepage": "https://github.com/indigomx9/tgraph1next#readme",
   "dependencies": {
+    "apollo-server-micro": "^3.6.7",
+    "class-validator": "^0.13.2",
+    "graphql": "^15.3.0",
+    "micro": "^9.3.4",
     "next": "^12.1.4",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "reflect-metadata": "^0.1.13",
+    "type-graphql": "^1.1.1"
   },
   "devDependencies": {
     "@types/node": "^17.0.23",
@@ -30,6 +36,5 @@
     "typescript": "^4.6.3"
   }
 }
-
 
 
