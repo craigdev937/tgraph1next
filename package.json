@@ -1,0 +1,35 @@
+{
+  "name": "tgraph1next",
+  "version": "1.0.0",
+  "description": "Initial setup of the project.  Created with NextJS, TypeScript, React-Query and Type-GraphQL.",
+  "main": "src/pages/index.tsx",
+  "scripts": {
+    "dev": "next dev -p 8080",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/indigomx9/tgraph1next.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/indigomx9/tgraph1next/issues"
+  },
+  "homepage": "https://github.com/indigomx9/tgraph1next#readme",
+  "dependencies": {
+    "next": "^12.1.4",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.23",
+    "@types/react": "^17.0.43",
+    "typescript": "^4.6.3"
+  }
+}
+
+
+
