@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "next dev -p 8080",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "generate": "graphql-codegen"
   },
   "repository": {
     "type": "git",
@@ -20,21 +21,28 @@
   },
   "homepage": "https://github.com/indigomx9/tgraph1next#readme",
   "dependencies": {
+    "@types/cors": "^2.8.12",
     "apollo-server-micro": "^3.6.7",
     "class-validator": "^0.13.2",
+    "cors": "^2.8.5",
     "graphql": "^15.3.0",
+    "graphql-request": "^4.2.0",
     "micro": "^9.3.4",
     "next": "^12.1.4",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "react-query": "^3.34.19",
     "reflect-metadata": "^0.1.13",
     "type-graphql": "^1.1.1"
   },
   "devDependencies": {
+    "@graphql-codegen/cli": "^2.6.2",
+    "@graphql-codegen/typescript": "^2.4.8",
+    "@graphql-codegen/typescript-graphql-request": "^4.4.5",
+    "@graphql-codegen/typescript-operations": "^2.3.5",
+    "@graphql-codegen/typescript-react-query": "^3.5.9",
     "@types/node": "^17.0.23",
     "@types/react": "^17.0.43",
     "typescript": "^4.6.3"
   }
 }
-
-

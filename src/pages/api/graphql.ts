@@ -1,25 +1,8 @@
 import "reflect-metadata";
 import { NextApiRequest, NextApiResponse } from "next";
 import { ApolloServer } from "apollo-server-micro";
-import { buildSchema, Resolver, Query, ObjectType, 
-    Field, ID } from "type-graphql";
-
-@ObjectType()
-export class Dog {
-    @Field(() => ID)
-    name: string;
-};
-
-@Resolver(Dog)
-export class DogsResolver {
-    @Query(() => [Dog])
-    dogs(): Dog[] {
-        return [
-            { name: "Bo"}, 
-            { name: "Django" }
-        ];
-    }
-};
+import { DogsResolver } from "../../schema/dogsResolver";
+import { buildSchema } from "type-graphql";
 
 const schema = await buildSchema({
     resolvers: [DogsResolver],
