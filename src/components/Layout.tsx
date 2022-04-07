@@ -32,7 +32,7 @@ export const Layout = ({children}: Props): JSX.Element => {
                         width={{ sm: 200 }}
                     >
                         <Link href="/" passHref>
-                            <Box>
+                            <Box sx={{ display: "flex" }}>
                                 <Home />
                                 <Title order={5} ml={10}>
                                     Home
