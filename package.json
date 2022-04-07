@@ -21,6 +21,10 @@
   },
   "homepage": "https://github.com/indigomx9/tgraph1next#readme",
   "dependencies": {
+    "@mantine/core": "^4.1.2",
+    "@mantine/form": "^4.1.2",
+    "@mantine/hooks": "^4.1.2",
+    "@mantine/next": "^4.1.2",
     "@types/cors": "^2.8.12",
     "apollo-server-micro": "^3.6.7",
     "class-validator": "^0.13.2",
@@ -33,6 +37,7 @@
     "react-dom": "^18.0.0",
     "react-query": "^3.34.19",
     "reflect-metadata": "^0.1.13",
+    "tabler-icons-react": "^1.44.0",
     "type-graphql": "^1.1.1"
   },
   "devDependencies": {

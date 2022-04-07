@@ -1,12 +1,26 @@
 import React from "react";
+import { dehydrate, useQuery } from "react-query";
+import { getDogs, queryClient } from "../api";
+import { GetServerSideProps } from "next";
 
 export default function Index() {
+    const { data } = useQuery(["dogs"], () => getDogs());
     return (
         <React.Fragment>
-            <h1>NextJS</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim quis illo natus maiores accusamus, ratione doloremque cum nesciunt, dolores temporibus sunt quidem placeat! Adipisci, praesentium amet. Delectus cumque alias quos?</p>
+            
         </React.Fragment>
     );
+};
+
+export const getServerSideProps: GetServerSideProps = 
+async () => {
+    await queryClient.prefetchQuery(["dogs"], () => getDogs());
+
+    return {
+        props: {
+            dehydratedState: dehydrate(queryClient),
+        },
+    };
 };
 
 
